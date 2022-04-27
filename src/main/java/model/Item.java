@@ -25,6 +25,5 @@ public class Item {
     @Column(precision = 2)
     private double value;
 
-    @Column(nullable = true)
     private Integer stock;
 }
