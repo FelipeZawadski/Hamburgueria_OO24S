@@ -19,14 +19,13 @@ public class HamburgueriaOo24SApplication {
     }
 
     @EventListener(ApplicationReadyEvent.class)
-    public void doSomethingAfterStartup(){
+    public void doSomethingAfterStartup() {
         itemRepository.save(
                 Item.builder()
-                        .description("coke")
+                        .description("Coke")
                         .value(4.5)
-                        .stocked(10)
-
-        )
+                        .build()
+        );
     }
 
 }
